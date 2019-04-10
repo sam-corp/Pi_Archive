@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" media="all" href="../css/materialize.min.css" />
+    <link rel='stylesheet prefetch' href='../css/materialicon.css'>
+</head>
+<body>
+
+<!--FILLING OF SELECT VIA COMBO TABLE-->
+  <div class="row">
+    <div class="col s1">Les types de produit:</div>
+    <div class="col s5">
+      <select class="browser-default col s6 cv" name="chnv">
+                    <option>Choose Product</option>
+      </select>
+    </div>
+    <div class="col s5">
+      <a class="btn waves-effect waves-light red btnlogout">Deconnexion</a>
+    </div>
+  </div>
+<!-- !FILLING OF SELECT VIA COMBO TABLE-->
+
+  <div id="reload">
+
+    <!-- TABLE CODE FOR PRODUCT LISTING -->
+    <div class="card" style="margin-left: 166px;margin-right: 175px;">
+          <div class="card-content" id="editEven" style="padding-bottom: 0px">
+                <center>
+                <font style="text-align: center; font-family: cursive; font-size: 20px;" class="col m12">Liste des produits
+                </font>
+                <a  class="btn-floating waves-effect waves-light orange btnAddUser modal-trigger" href="#modal1" value="" ><i class="material-icons">add</i></a>
+                </center>
+                <table class="col m12" id="grid"></table>
+          </div>
+    </div>
+    <!-- !TABLE CODE FOR PRODUCT LISTING -->
+
+    <!-- MODAL STRUCTURE TO ADD PRODUCT -->
+      <div id="modal1" class="modal" style="width:900px;height:800px">
+
+              <div class="modal-content">
+
+            <center> <h4>Ajouter Produit</h4> </center>
+
+                      <div class="row col s12">
+                          <div class="input-field col s12">
+                              <input type="text" class="nom" id="nom" name="nom"  aria-required="true">
+                              <label for="nom">Nom du produit</label>
+                            </div>
+
+                          <div class="input-field col s12">
+                              <input type="text" class="marque" id="marque" name="marque"  aria-required="true">
+                              <label for="marque">Marque du produit</label>
+                          </div>
+
+                          <div class="input-field col s12">
+                              <input type="text" class="prix" id="prix" name="prix"  aria-required="true">
+                              <label for="prix">Prix</label>
+                            </div>
+                      </div>
+                          
+                  <div class="modal-footer">
+                    <button class="btn btn-success" id="btn_add_product">Ajouter</button>
+                    <a href="#!" class="modal-action modal-close btn waves-effect waves-light red">Fermer</a>
+                  </div>
+          </div>
+    </div>
+    <!-- MODAL STRUCTURE TO ADD PRODUCT -->
+
+  </div>
+
+
+<div class="row">
+  
+  <div class="col s12 m5">
+    <div class="waves-effect waves-purple card horizontal hoverable">
+      <div class="card-image">
+        <img src="../img/sword.png">
+      </div>
+      <a id="cd_prem">
+        <div class="card-stacked">
+        <div class="card-content">
+          <p>L'image a gauche represente un monde avec une infinie d'épée. 
+          Tiré du manga: Fate Stay Night - Unlimited Blade Works.
+          </p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="col s12 m5">
+    <div class="waves-effect waves-red card horizontal hoverable">
+      <div class="card-image">
+        <img src="../img/plant.png">
+      </div>
+      <a id="cd_deux">
+        <div class="card-stacked">
+        <div class="card-content">
+          <p>L'image a gauche represente une plante symbolisant la nouvelle 
+            generation.Tiré du manga: Boruto The next Generation.
+          </p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+  
+<div class="col m12 mainContentPrem" style="padding: 20px;"></div>
+<div class="col m12 mainContentDeux" style="padding: 20px;"></div>
+
+  <script src="../js/jquery-3.2.1.min.js" language="javascript"></script>
+  <script src="../js/materialize.min.js" language="javascript"></script>
+  <script src="../js/sweetalert.js" language="javascript"></script>
+  <script src="../controller/app.js" language="javascript"></script>
+
+</body>
+</html>

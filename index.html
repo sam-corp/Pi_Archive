@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <link rel="stylesheet" media="all" href="css/materialize.min.css" />
+    <link rel='stylesheet prefetch' href='css/materialicon.css'>
+    <title></title>
+  </head>
+  <body>
+    <header class="row topmenu">
+      <div class="navbar-fixed">
+        <!--div id="modal1" class="modal">
+           <div class="modal-content" id="addarea">
+
+           </div>
+         </div-->
+        <nav>
+          <div class="nav-wrapper col m12 s12 grey darken-4">
+            <font class="white-text text-darken-2 flow-text">
+              Pi - ARCHIVE (l'archive qui dechire)
+            </font>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="row LOADER">
+      <div class="progress">
+          <div class="indeterminate"></div>
+      </div>
+    </div>
+    <div class="col m12 s12">
+      <div class="col s12 MENU">
+        <button type="button" class="btn blue MENU_ITEM" data="main" name="button">Main</button>
+        <button type="button" class="btn blue MENU_ITEM" data="page1" name="button">Page 1</button>
+        <button type="button" class="btn blue MENU_ITEM" data="page2" name="button">Page 2</button>
+      </div>
+      <div class="col s12 loadPane">
+        <!-- ELEMENTS ARE LOADED HERE... WE CAN WRITE PATTERNS TO LOAD 'EM ELSE WHERE -->
+      </div>
+    </div>
+
+    <!-- THIS WEIRD PART WILL BE REPLACED BY CDN -->
+    <script src="js/jquery-3.3.1.min.js" language="javascript"></script>
+    <script src="js/materialize.min.js" language="javascript"></script>
+    <script src="js/jquery.routes.js" language="javascript"></script>
+    <script type="text/javascript" src="js/sweetalert.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <!-- END OF THE WEIRD PART -->
+  </body>
+</html>
